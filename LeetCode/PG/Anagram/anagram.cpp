@@ -1,3 +1,4 @@
+//cpp code to chek if two strings are anagram or not
 #include<iostream>
 #include<algorithm>
 
