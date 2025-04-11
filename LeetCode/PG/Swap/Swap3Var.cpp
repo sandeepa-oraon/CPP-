@@ -1,4 +1,4 @@
-// using 3rd variabel
+// using 3rd variabel swap 2 numbers
 #include<iostream>
 int main() {
     int a, b,c;
