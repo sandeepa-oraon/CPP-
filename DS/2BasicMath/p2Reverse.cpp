@@ -4,7 +4,7 @@
                 Input:N = 12345
                
                 Output:54321
-                
+          
                 Explanation: The reverse of 12345 is 54321.
                                         
                 Example 2:
