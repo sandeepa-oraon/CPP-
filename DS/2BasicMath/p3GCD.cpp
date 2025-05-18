@@ -25,16 +25,29 @@ Greatest Common divisor = 1.
 */
 #include<iostream>
 using namespace std;
+int GCD(int a, int b);
 int main(){
-    int n1, n2, GCD=0;
+//     int n1, n2, GCD;
+    int n1, n2;
     cin>>n1;
     cin>>n2;
-    for(int i=1; i<min(n1, n2); i++){
-        if(n1%i==0 && n2%i==0){
-            GCD= i;
-        }
-    }
-    cout << "GCD of " << n1 << " and " << n2 << " is: " << GCD << endl;
+    // for(int i=1; i<min(n1, n2); i++){
+    //     if(n1%i==0 && n2%i==0){
+    //         GCD= i;
+    //     }
+    // }
+    // cout << "GCD of " << n1 << " and " << n2 << " is: " << GCD << endl;
+    int res= GCD(n1, n2);
+    cout << "GCD of " << n1 << " and " << n2 << " is: " << res << endl;
     
     return 0;
+}
+
+int GCD(int a, int b){
+    while(b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
 }
