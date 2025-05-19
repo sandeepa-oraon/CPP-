@@ -1,5 +1,5 @@
 /*
-1. Understand recursion by print something N times
+3. Print 1 to N using recursion
 */
 
 #include<iostream>
@@ -10,10 +10,11 @@ int main(){
     fun(num);
 }
 int fun(int num){
-    cout<<"hello \n";
-    num++;
-    if(num<10){
-        fun(num);
+    if(num== 10){
+        return 0;
     }
+    num++;
+    cout<<num<< "\n";
+    fun(num);
     return 0;
 }
